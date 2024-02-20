@@ -32,8 +32,7 @@ export class MiniMapComponent implements AfterViewInit {
         this.map = map(this.divMap?.nativeElement, {
             center: this.lngLat,
             zoom: this.currentZoom,
-            zoomControl: false,
-            dragging: false
+            zoomControl: false
         });
 
         tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -63,7 +62,7 @@ export class MiniMapComponent implements AfterViewInit {
         })
 
         const mark = marker(this.lngLat, {
-            draggable: true,
+            draggable: false,
             icon: icon
         }).addTo(this.map);
     }

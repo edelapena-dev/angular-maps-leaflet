@@ -8,7 +8,7 @@ interface House {
 
 @Component({
     templateUrl: './properties-page.component.html',
-    styles: ``
+    styles: ``,
 })
 export class PropertiesPageComponent {
     public houses: House[] = [

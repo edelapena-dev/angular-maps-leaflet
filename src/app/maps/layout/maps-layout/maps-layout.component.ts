@@ -4,13 +4,13 @@ import { Component } from '@angular/core';
     selector: 'app-maps-layout',
     templateUrl: './maps-layout.component.html',
     styles: `
-  maps-side-menu{
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 999;
-  }
-  `
+        map-side-menu{
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 999;
+        }
+    `
 })
 export class MapsLayoutComponent {
 
